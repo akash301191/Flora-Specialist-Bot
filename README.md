@@ -1,4 +1,3 @@
-Awesome, thanks for the details! Here's a complete and polished **README.md** for 
 # Flora Specialist Bot
 
 Flora Specialist Bot is your AI-powered plant expert built with Streamlit. Upload a plant photo and get instant identification, followed by a personalized, research-backed care guide tailored to your plant’s watering, lighting, climate, and common issue needs.

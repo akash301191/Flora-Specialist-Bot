@@ -211,10 +211,15 @@ def main() -> None:
         else:
             with st.spinner("Identifying the Plant and Generating a Comprehensive Plant Care Guide..."):
                 report = generate_plant_report(plant_profile)
+                
                 st.session_state.plant_report = report
+                st.session_state.image = plant_profile["uploaded_image"]
 
     # Display and download
     if "plant_report" in st.session_state:
+        st.markdown("## 🖼️ Uploaded Image")
+        st.image(st.session_state.image, use_container_width=False)
+
         st.markdown(st.session_state.plant_report, unsafe_allow_html=True)
 
         st.download_button(
